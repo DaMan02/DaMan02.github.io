@@ -21,6 +21,27 @@ body.active {
     z-index: -1
 }
 
+.vidcontainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    /* float: left; */
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+  
+ .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+    margin-right:auto;
+    margin-left:auto;
+    border: none;
+  }
+
 .no-js #experience-timeline>div {
     background: #fff;
     padding: 10px;
