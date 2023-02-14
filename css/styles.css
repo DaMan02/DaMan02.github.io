@@ -24,9 +24,9 @@ body.active {
 .vidcontainer {
     position: relative;
     width: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
     background-color: black;
-    /* float: left; */
+    float: left;
     padding-top: 56.25%; /* 16:9 Aspect Ratio */
   }
   
