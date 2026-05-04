@@ -234,6 +234,34 @@ footer {
     color: #3498db
 }
 
+.social a {
+    position: relative
+}
+
+.social a::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+    margin-bottom: 5px
+}
+
+.social a:hover::after {
+    opacity: 1;
+    visibility: visible
+}
+
 .btn-rounded-white {
     display: inline-block;
     color: #fff;
